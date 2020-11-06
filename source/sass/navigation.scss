@@ -4,6 +4,7 @@
   padding-top: 51px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 73.5%;
 }
 
@@ -38,26 +39,68 @@
   text-align: right;
 }
 
-.navigation__link--email::before {
-  content: "";
-  width: 19px;
-  height: 14px;
-  background-image: url("../img/envelope-icon.svg");
-  background-repeat: no-repeat;
+.navigation__btn {
+  display: block;
+  text-decoration: none;
 
-  position: absolute;
-  left: 0;
-  top: 7px;
+  color: #ffffff;
+
+  width: 12.75%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.navigation__link--tel::before {
-  content: "";
-  width: 18px;
-  height: 18px;
-  background-image: url("../img/phone-call-icon.svg");
-  background-repeat: no-repeat;
+@media (max-width: 1023px) {
+  .navigation {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
 
-  position: absolute;
-  left: 0;
-  top: 2px;
+    box-sizing: border-box;
+  }
+
+  .navigation__list {
+    width: 11%;
+    // width: 84px;
+    min-width: auto;
+    margin: 0;
+    align-items: center;
+  }
+
+  .navigation__item--tel,
+  .navigation__item--email {
+    min-width: auto;
+    width: auto;
+  }
+
+  .navigation__envelope-img {
+    width: 25px;
+    height: 18px;
+  }
+
+  .navigation__phone-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .navigation__text {
+    display: none;
+  }
+
+  .navigation__btn {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation {
+    padding-top: 17px;
+    padding-left: 17px;
+    padding-right: 15px;
+  }
+
+  .navigation__list {
+    width: 26.25%;
+  }
 }

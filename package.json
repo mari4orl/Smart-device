@@ -13,7 +13,7 @@
     "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
-    "gulp-posthtml": "^3.0.4",
+    "gulp-posthtml": "^3.0.5",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "4.0.x",
     "gulp-sourcemaps": "2.6.x",
@@ -22,7 +22,7 @@
     "node-normalize-scss": "^8.1.2",
     "node-sass-tilde-importer": "^1.0.2",
     "pixel-glass": "^1.0.13",
-    "posthtml-include": "^1.2.0",
+    "posthtml-include": "^1.6.0",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
