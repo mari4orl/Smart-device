@@ -1,0 +1,63 @@
+.navigation {
+  margin: 0 auto;
+
+  padding-top: 51px;
+  display: flex;
+  justify-content: space-between;
+  width: 73.5%;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-left: auto;
+  margin-right: 2.7%;
+  padding: 0;
+  width: 31.25%;
+  min-width: 360px;
+
+  list-style: none;
+}
+
+.navigation__item--email {
+  width: 30.6%;
+  min-width: 125px;
+}
+.navigation__item--tel {
+  width: 49.4%;
+  min-width: 210px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  position: relative;
+  text-align: right;
+}
+
+.navigation__link--email::before {
+  content: "";
+  width: 19px;
+  height: 14px;
+  background-image: url("../img/envelope-icon.svg");
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.navigation__link--tel::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/phone-call-icon.svg");
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
