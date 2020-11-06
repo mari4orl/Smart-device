@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Велосипеды</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="">
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="page-header__navigation navigation navigation--closed navigation--nojs">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#about-us" class="navigation__link">О нас</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#types" class="navigation__link">Виды велосипедов</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#video" class="navigation__link">Видео про велосипеды</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contacts" class="navigation__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__inner">
+
+        <div class="page-header__heading">
+          <a class="page-header__logo">
+            <img src="img/logo.svg" width="68" height="20" alt="Логотип moon">
+          </a>
+          <h1 class="page-header__title">Мы продаем велосипеды</h1>
+          <p class="page-header__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </div>
+
+        <div class="page-header__form-wrapper">
+          <p class="page-header__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <form class="page-header__form" action="https://echo.htmlacademy.ru" method="post">
+            <input aria-label="Поле ввода имени" type="text" name="name" placeholder="Введите Ваше Имя" required="">
+            <input aria-label="Поле ввода телефона" type="tel" id="phone" name="tel" placeholder="Введите Ваш номер телефона" required="">
+            <button type="submit" class="page-header__btn">Подобрать велосипед мечты</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="about-us" id="about-us">
+        <h2 class="about-us__title">Несколько фактов о нас</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item">
+            <h3 class="about-us__number">01</h3>
+            <p class="about-us__text">Самый широкий выбор велосипедов!</p>
+          </li>
+          <li class="about-us__item about-us__item--second">
+            <h3 class="about-us__number about-us__number--second">02</h3>
+            <p class="about-us__text">Доставка велосипедов по всей России!</p>
+          </li>
+          <li class="about-us__item about-us__item--third">
+            <h3 class="about-us__number about-us__number--third">03</h3>
+            <p class="about-us__text">Большой выбор крутых аксессуаров!</p>
+          </li>
+          <li class="about-us__item">
+            <h3 class="about-us__number about-us__number--fourth">04</h3>
+            <p class="about-us__text">Профессиональные консультации!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="types" id="types">
+        <h2 class="types__title">Виды велосипедов</h2>
+        <ul class="types__list">
+          <li class="types__item types__item--first">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/road-bike-desk@1x.webp 1x, img/road-bike-desk@2x.webp 2x">
+              <source type="image/webp" srcset="img/road-bike-mob@1x.webp 1x, img/road-bike-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/road-bike-desk@1x.jpg 1x, img/road-bike-desk@2x.jpg 2x">
+              <img class="types__img" src="img/road-bike-mob@1x.jpg" srcset="img/road-bike-mob@2x.jpg 2x" alt="Белый велосипед с корзиной">
+            </picture>
+            <h3 class="types__name">Дорожный велосипед</h3>
+          </li>
+          <li class="types__item types__item--middle">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/mount-bike-desk@1x.webp 1x, img/mount-bike-desk@2x.webp 2x">
+              <source type="image/webp" srcset="img/mount-bike-mob@1x.webp 1x, img/mount-bike-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/mount-bike-desk@1x.jpg 1x, img/mount-bike-desk@2x.jpg 2x">
+              <img class="types__img" src="img/mount-bike-mob@1x.jpg" srcset="img/mount-bike-mob@2x.jpg 2x" alt="Спортивный велосипед в горах">
+            </picture>
+            <h3 class="types__name">Горный велосипед</h3>
+          </li>
+          <li class="types__item types__item--last">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/child-bike-desk@1x.webp 1x, img/child-bike-desk@2x.webp 2x">
+              <source type="image/webp" srcset="img/child-bike-mob@1x.webp 1x, img/child-bike-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/child-bike-desk@1x.jpg 1x, img/child-bike-desk@2x.jpg 2x">
+              <img class="types__img" src="img/child-bike-mob@1x.jpg" srcset="img/child-bike-mob@2x.jpg 2x" alt="Маленький розовый велосипед с корзинкой">
+            </picture>
+            <h3 class="types__name">Детский велосипед</h3>
+          </li>
+        </ul>
+      </section>
+      <section class="video" id="video">
+        <h2 class="video__title">Видео про велосипеды</h2>
+        <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <div class="video__wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/video-desk@1x.webp 1x, img/video-desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tab@1x.webp 1x, img/video-tab@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-mob@1x.webp 1x, img/video-mob@2x.webp 2x">
+
+            <source media="(min-width: 1024px)" srcset="img/video-desk@1x.jpg 1x, img/video-desk@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tab@1x.jpg 1x, img/video-tab@2x.jpg 2x">
+            <img class="video__img" src="img/video-mob@1x.jpg" srcset="img/video-mob@2x.jpg 2x" alt="Пейзаж со скалой и домиком">
+          </picture>
+          <button aria-label="Воспроизвести видео" class="video__button" type="button"></button>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <h2 class="contacts__title">Как нас найти?</h2>
+        <p class="contacts__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+        <iframe class="contacts__map" title="Местоположение магазина" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6034999219203!2d30.32336239938298!3d59.93872124937385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1602861281030!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="contacts__contacts">
+          <a href="mailto:puteshestviemechta@gmail.ru" class="contacts__mail">puteshestviemechta@gmail.ru</a>
+          <a href="tel:+749978468446" class="contacts__tel">+7 (499) -784-684-46</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/navigation.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/mask.js"></script>
+  </body>
+</html>
