@@ -37,6 +37,10 @@
   display: block;
 }
 
+.page-footer__text-tablet {
+  display: none;
+}
+
 .page-footer__sections {
   display: flex;
   flex-wrap: wrap;
@@ -46,13 +50,11 @@
   padding: 65px 0 57px 21px;
 }
 
-.page-footer__sections-title {
-  width: 100%;
-  padding-left: 20px;
+.closed {
+  display: none;
 }
 
-.page-footer__sections-title,
-.page-footer__contacts-title {
+.page-footer__title {
   font-family: Roboto Condensed;
   font-weight: normal;
   font-size: 15px;
@@ -61,8 +63,10 @@
   text-transform: uppercase;
   color: #1b2d37;
 
+  width: 100%;
+  padding-left: 20px;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 20px;
 }
 
 .page-footer__sections-list,
@@ -87,11 +91,16 @@
 
 .page-footer__contacts {
   margin-left: auto;
-  padding: 65px 0 57px 21px;
+  padding: 65px 0 55px 21px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-footer__contacts-list {
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .page-footer__contacts-link {
@@ -111,7 +120,7 @@
   justify-content: space-between;
 
   width: 100%;
-  padding: 14px 25px 10px 20px;
+  padding: 24px 25px 24px 20px;
   position: relative;
   box-sizing: border-box;
 
@@ -150,4 +159,173 @@
 
 .page-footer__text--developer {
   margin-left: auto;
+}
+
+@media (max-width: 1023px) {
+  .page-footer__inner {
+    flex-wrap: wrap;
+  }
+
+  .page-footer__head-wrapper {
+    margin: 0 auto;
+    padding: 19px 24px 26px 25px;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .page-footer__socials {
+    margin-top: 11px;
+  }
+
+  .page-footer__text-tablet {
+    display: block;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #1B2D37;
+    opacity: 0.5;
+    margin: 0;
+  }
+
+  .page-footer__sections {
+    margin-right: 0;
+    max-width: 243px;
+    padding: 38px 0 33px 27px;
+  }
+
+  .page-footer__contacts {
+    margin-left: auto;
+    padding: 38px 37px 33px 0;
+  }
+
+  .page-footer__contacts-list {
+    padding-right: 0;
+  }
+
+  .page-footer__text--copyright {
+    display: none;
+  }
+
+  .page-footer__text--company {
+    display: none;
+  }
+
+  .page-footer__text--developer {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-footer__inner {
+    flex-direction: column;
+  }
+
+  .page-footer__head-wrapper {
+    padding: 46px 52px 54px 52px;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .page-footer__text-tablet {
+    margin-top: 26px;
+  }
+
+  .page-footer__socials {
+    margin-top: 32px;
+  }
+
+  .closed {
+    display: block;
+  }
+
+  .page-footer__sections,
+  .page-footer__contacts {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    padding-top: 29px;
+    padding-left: 15px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .page-footer__sections::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: #1b2b37;
+    opacity: 0.2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .page-footer__title {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 28px;
+  }
+
+  .page-footer__title::after,
+  .page-footer__title::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    background: #1b2b37;
+    opacity: 0.5;
+    right: 17px;
+    top: 36px;
+    display: block;
+  }
+
+  .page-footer__title::after {
+    transform: rotate(90deg);
+  }
+
+  .page-footer__sections-list,
+  .page-footer__contacts-list {
+    display: none;
+  }
+
+  .page-footer__sections {
+    flex-direction: column;
+  }
+
+  .page-footer input[id=section]:checked ~ .page-footer__sections-list,
+  .page-footer input[id=contacts]:checked ~ .page-footer__contacts-list {
+    display: block;
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .page-footer__sections-list:last-child,
+  .page-footer__contacts-list {
+    margin-bottom: 28px;
+  }
+
+  .page-footer__footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-footer__text {
+    margin: 0;
+    margin-top: 21px;
+  }
+
+  .page-footer__text:first-child {
+    margin: 0;
+  }
 }
