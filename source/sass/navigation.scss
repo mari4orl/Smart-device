@@ -5,7 +5,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 73.5%;
+  max-width: 1460px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.navigation__logo {
+  margin-right: auto;
 }
 
 .navigation__list {
@@ -13,10 +19,8 @@
   justify-content: space-between;
 
   margin: 0;
-  margin-left: auto;
   margin-right: 2.7%;
   padding: 0;
-  width: 31.25%;
   min-width: 360px;
 
   list-style: none;
@@ -46,6 +50,7 @@
   color: #ffffff;
 
   width: 12.75%;
+  min-width: 180px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -62,7 +67,6 @@
 
   .navigation__list {
     width: 11%;
-    // width: 84px;
     min-width: auto;
     margin: 0;
     align-items: center;
