@@ -2,7 +2,7 @@
 
 var accList = document.querySelectorAll('.acc');
 
-for (i = 0; i < accList.length; i++) {
+for (var i = 0; i < accList.length; i++) {
   var acc = accList[i];
   acc.addEventListener('click', function (evt) {
     if (evt.target.checked) {

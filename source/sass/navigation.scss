@@ -53,6 +53,15 @@
   min-width: 180px;
   padding-left: 10px;
   padding-right: 10px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #666666;
+  }
+
+  &:focus {
+    opacity: 0.2;
+  }
 }
 
 @media (max-width: 1023px) {

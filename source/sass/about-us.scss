@@ -1,0 +1,78 @@
+.about-us {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding-left: 205px;
+  padding-right: 25px;
+  padding-bottom: 96px;
+
+  box-sizing: border-box;
+
+  background-image: url("../img/2005@1x.png");
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-us__title {
+  font-family: Roboto Condensed;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #666666;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.about-us__text {
+  line-height: 22px;
+  color: #666666;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about-us__mobile {
+  display: none;
+}
+
+.about-us__details {
+  margin-top: 20px;
+  text-decoration: none;
+  border-color: #00b2ff;
+  color: #00b2ff;
+  min-width: 180px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1023px) {
+  .about-us {
+    background-size: 251px;
+    padding-bottom: 75px;
+  }
+
+  .about-us__desktop {
+    display: none;
+  }
+
+  .about-us__mobile {
+    display: inline;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us {
+    background-image: none;
+    padding-left: 14px;
+    padding-right: 15px;
+    padding-bottom: 65px;
+  }
+
+  .about-us__text {
+    margin-bottom: 40px;
+  }
+
+  .about-us__details  {
+    margin: 0;
+  }
+}
