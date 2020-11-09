@@ -1,0 +1,129 @@
+.form {
+  background: #00b2ff;
+  background-image: url("../img/airplane@1x.png"), url("../img/triangles-form.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 330px) 175px, calc(50% + 82px);
+
+
+  min-height: 670px;
+}
+
+.form__container {
+  max-width: 1235px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 96px;
+  padding-bottom: 114px;
+}
+
+.form__form {
+  margin-left: auto;
+  max-width: 570px;
+}
+
+.form__title {
+  font-family: Roboto Condensed;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.form__text {
+  margin: 0;
+  margin-bottom: 49px;
+
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__form input[type=text],
+.form__form input[type=tel],
+.form__form textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  color: #ffffff;
+  outline: none;
+  line-height: 22px;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+}
+
+.form__form input[type=text],
+.form__form input[type=tel] {
+  width: 270px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.form__form textarea {
+  width: 100%;
+  margin-bottom: 43px;
+}
+
+.form__bottom {
+  justify-content: space-between;
+  display: flex;
+}
+
+.form__btn {
+  min-width: 270px;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #00b2ff
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.form__agr-label {
+  width: 270px;
+  color: #ffffff;
+  padding-left: 32px;
+  box-sizing: border-box;
+  position: relative;
+  opacity: 0.8;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffff;
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.form__bottom input[type=checkbox]:checked ~ .form__agr-label::before {
+  background-image: url("../img/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

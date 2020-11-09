@@ -1,5 +1,6 @@
 .page-footer {
   background: #fafafa;
+  overflow: hidden;
 }
 
 .page-footer__inner {
@@ -289,6 +290,10 @@
 
   .page-footer__title::after {
     transform: rotate(90deg);
+  }
+
+  .page-footer input:checked ~ .page-footer__title::after {
+    display: none;
   }
 
   .page-footer__sections-list,
