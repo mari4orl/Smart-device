@@ -41,6 +41,14 @@
   display: block;
   position: relative;
   text-align: right;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.2;
+  }
 }
 
 .navigation__btn {

@@ -45,11 +45,11 @@
       <div class="page-header__inner">
         <h1 class="page-header__title">Печатные платы</h1>
         <p class="page-header__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a href="#form" class="page-header__form btn">
+        <a href="#form" class="page-header__form btn anchor-link">
           <span class="page-header__desktop-text">Получить бесплатную консультацию</span>
           <span class="page-header__mobile-text">Бесплатная консультация</span>
         </a>
-        <a href="#features" class="page-header__scroll">Скролл вниз</a>
+        <a href="#features" class="page-header__scroll anchor-link">Скролл вниз</a>
       </div>
     </header>
 
@@ -93,7 +93,7 @@
           </li>
         </ul>
 
-        <div class="features__about-us about-us">
+        <div class="features__about-us about-us" id="about-us">
           <h2 class="about-us__title">О компании</h2>
           <p class="about-us__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
           <p class="about-us__text">
@@ -103,22 +103,22 @@
         </div>
       </section>
 
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <div class="catalog__container">
           <h2 class="catalog__title">Service Device предлагает следующие товары и услуги</h2>
           <ul class="catalog__list">
-            <li class="catalog__item catalog__item--production">
-              <a href="#" id="production" class="catalog__link">
+            <li class="catalog__item catalog__item--production" id="production">
+              <a href="#" class="catalog__link">
                 Производство печатных плат
               </a>
             </li>
-            <li class="catalog__item catalog__item--assembling">
-              <a href="#" id="assembling" class="catalog__link">
+            <li class="catalog__item catalog__item--assembling" id="assembling">
+              <a href="#" class="catalog__link">
                 Монтаж печатных плат
               </a>
             </li>
-            <li class="catalog__item catalog__item--components">
-              <a href="#" id="components" class="catalog__link">
+            <li class="catalog__item catalog__item--components" id="components">
+              <a href="#" class="catalog__link">
                 Комплектующие для светотехники
               </a>
             </li>
@@ -139,7 +139,7 @@
             <textarea id="message" placeholder="Ваш вопрос" aria-label="Введите ваш вопрос" rows="5" required></textarea>
             <div class="form__bottom">
               <button class="form__btn btn" type="submit">Задать вопрос</button>
-              <input type="checkbox" class="visually-hidden" name="agreement" id="agreement" value="agreement"
+              <input type="checkbox" class="visually-hidden" name="agreement" id="agreement" value="agree"
               checked>
               <label for="agreement" class="form__agr-label">Я согласен на обработку  персональных данных</label>
             </div>
@@ -185,17 +185,29 @@
           <input class="closed visually-hidden acc" type="checkbox" name="section" id="section">
           <label for="section" class="page-footer__title">Разделы сайта</label>
           <ul class="page-footer__sections-list">
-            <li class="page-footer__sections-item">.dfdfd</li>
-            <li class="page-footer__sections-item">.dfdfdf</li>
             <li class="page-footer__sections-item">
-              <a href="#production">Производство печатных плат</a>
+              <a href="#about-us" class="anchor-link">О компании</a>
             </li>
-            <li class="page-footer__sections-item">.dfdfd</li>
+            <li class="page-footer__sections-item">
+              <a href="#catalog" class="anchor-link">Продукты</a>
+            </li>
+            <li class="page-footer__sections-item">
+              <a href="#production" class="anchor-link">Производство печатных плат</a>
+            </li>
+            <li class="page-footer__sections-item">
+              <a href="#assembling" class="anchor-link">Монтаж печатных плат</a>
+            </li>
           </ul>
           <ul class="page-footer__sections-list page-footer__sections-list--second">
-            <li class="page-footer__sections-item">.dfdfdf</li>
-            <li class="page-footer__sections-item">.dfdf</li>
-            <li class="page-footer__sections-item">.dfdffdfdfd</li>
+            <li class="page-footer__sections-item">
+              <a href="#components" class="anchor-link">Комплектующие</a>
+            </li>
+            <li class="page-footer__sections-item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="page-footer__sections-item">
+              <a href="#">Контакты</a>
+            </li>
           </ul>
         </div>
 
@@ -228,13 +240,34 @@
         <div class="page-footer__footer">
           <p class="page-footer__text page-footer__text--copyright">Все права защищены</p>
           <p class="page-footer__text page-footer__text--company">1999-2018 SD Service Devices</p>
-          <p class="page-footer__text page-footer__text--policy">Условия конфиденциальности</p>
-          <p class="page-footer__text page-footer__text--developer">Developed by wow studio</p>
+          <p class="page-footer__text page-footer__text--policy">
+            <a href="#">Условия конфиденциальности</a>
+          </p>
+          <p class="page-footer__text page-footer__text--developer">
+            <a href="#">Developed by wow studio</a>
+          </p>
         </div>
       </div>
     </footer>
 
-    <script src="js/navigation.js"></script>
+    <section class="modal modal--closed">
+      <h2 class="visually-hidden">Форма заказа обратного звонка</h2>
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button type="button" class="modal__close-btn">Закрыть</button>
+        <form action="https://echo.htmlacademy.ru" class="modal__form" method="post" name="form" id="modal-form">
+          <legend class="modal__title">Закажите звонок</legend>
+          <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <input type="text" name="name" id="modal-name" placeholder="Имя" value="" required>
+          <input type="tel" name="phone" id="modal-phone" placeholder="Телефон" value="" required>
+          <textarea id="modal-message" placeholder="Ваш вопрос" form="form-modal" rows="5" required></textarea>
+          <button class="modal__btn btn" type="submit">Отправить</button>
+          <input type="checkbox" class="visually-hidden" name="agreement" id="modal-agreement" value="agree"
+            checked>
+          <label for="modal-agreement" class="modal__agr-label">Я согласен на обработку  персональных данных</label>
+        </form>
+      </div>
+    </section>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
@@ -243,5 +276,7 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/mask.js"></script>
     <script src="js/accordeon.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/scroll.js"></script>
   </body>
 </html>

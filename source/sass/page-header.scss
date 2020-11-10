@@ -59,6 +59,11 @@
   line-height: 19px;
   padding: 18px;
   margin-left: 98px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #00b2ff;
+  }
 }
 
 .page-header__mobile-text {

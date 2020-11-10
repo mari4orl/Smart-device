@@ -36,6 +36,16 @@
 
 .page-footer__link {
   display: block;
+  fill: #cdcdcd;
+
+  &:hover {
+    fill: #00b2ff;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
+
 }
 
 .page-footer__text-tablet {
@@ -86,8 +96,20 @@
 .page-footer__contacts-item {
   font-size: 15px;
   line-height: 25px;
-  color: #1b2d37;
-  opacity: 0.5;
+  color: #8d969b;
+
+  &:hover a {
+    color: #00b2ff;
+  }
+
+  &:focus a {
+    color: #00b2ff;
+  }
+}
+
+.page-footer__sections-item a {
+  text-decoration: none;
+  color: #8d969b;
 }
 
 .page-footer__contacts {
@@ -103,7 +125,7 @@
 
 .page-footer__contacts-link {
   text-decoration: none;
-  color: #1b2d37;
+  color: #8d969b;
 }
 
 .page-footer__footer-wrapper {
@@ -145,6 +167,15 @@
   text-transform: uppercase;
   color: #1b2d37;
   opacity: 0.5;
+
+  & a {
+    text-decoration: none;
+    color: #1b2d37;
+  }
+
+  &:hover a {
+    color: #00b2ff;
+  }
 }
 
 .page-footer__text--copyright {
