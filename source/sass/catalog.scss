@@ -7,8 +7,8 @@
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 93px;
-  padding-bottom: 127px;
+  padding-top: 89px;
+  padding-bottom: 99px;
 
   box-sizing: border-box;
 }
@@ -21,7 +21,7 @@
   color: #ffffff;
 
   margin: 0;
-  margin-bottom: 47px;
+  margin-bottom: 50px;
 }
 
 .catalog__list {
@@ -57,6 +57,8 @@
     right: 0;
     bottom: 0;
 
+    cursor: pointer;
+
     background-color: #00b2ff;
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
@@ -80,6 +82,20 @@
   background-image: url("../img/components-desk@1x.png");
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .catalog__item--production {
+    background-image: url("../img/production-desk@2x.png");
+  }
+
+  .catalog__item--assembling {
+    background-image: url("../img/assembling-desk@2x.png");
+  }
+
+  .catalog__item--components {
+    background-image: url("../img/components-desk@2x.png");
+  }
+}
+
 .catalog__link {
   width: 100%;
   height: 100%;
@@ -101,8 +117,14 @@
   .catalog__container {
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 53px;
+    padding-top: 50px;
     padding-bottom: 32px;
+  }
+
+  .catalog__title {
+    max-width: 630px;
+    font-size: 32px;
+    line-height: 45px;
   }
 
   .catalog__list {
@@ -130,8 +152,22 @@
     background-image: url("../img/components-tab@1x.png");
   }
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .catalog__item--production {
+      background-image: url("../img/production-tab@2x.png");
+    }
+
+    .catalog__item--assembling {
+      background-image: url("../img/assembling-tab@2x.png");
+    }
+
+    .catalog__item--components {
+      background-image: url("../img/components-tab@2x.png");
+    }
+  }
+
   .catalog__link {
-    padding-top: 43px;
+    padding-top: 40px;
     padding-right: 520px;
     padding-bottom: 53px;
     padding-left: 44px;
@@ -139,6 +175,22 @@
 }
 
 @media (max-width: 767px) {
+  .catalog__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 51px;
+    padding-bottom: 34px;
+  }
+
+  .catalog__title {
+    max-width: 100%;
+    font-size: 28px;
+    line-height: 39px;
+
+    margin-bottom: 42px;
+    padding-left: 10px;
+  }
+
   .catalog__item--production {
     background-image: url("../img/production-mob@1x.png");
   }
@@ -151,8 +203,26 @@
     background-image: url("../img/components-mob@1x.png");
   }
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .catalog__item--production {
+      background-image: url("../img/production-mob@2x.png");
+    }
+
+    .catalog__item--assembling {
+      background-image: url("../img/assembling-mob@2x.png");
+    }
+
+    .catalog__item--components {
+      background-image: url("../img/components-mob@2x.png");
+    }
+  }
+
+  .catalog__item {
+    margin-bottom: 30px;
+  }
+
   .catalog__link {
-    padding-top: 33px;
+    padding-top: 20px;
     padding-left: 36px;
     padding-right: 90px;
     padding-bottom: 0;

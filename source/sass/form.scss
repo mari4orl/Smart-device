@@ -5,6 +5,13 @@
   background-position: calc(50% - 330px) 175px, calc(50% + 82px);
 }
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .form {
+      background-image: url("../img/airplane@2x.png"), url("../img/triangles-form.svg");
+      background-size: 511px, 1890px;
+    }
+  }
+
 .form__container {
   max-width: 1235px;
   margin: 0 auto;

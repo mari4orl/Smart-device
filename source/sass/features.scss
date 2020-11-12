@@ -2,15 +2,16 @@
   background-color: #ffffff;
   background-image: url("../img/triangles-features.svg");
   background-repeat: no-repeat;
+  background-position: center top -27px;
 
-  padding-top: 109px;
+  padding-top: 112px;
 }
 
 .features__list {
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 74px;
 
   display: flex;
   flex-wrap: wrap;
@@ -25,9 +26,9 @@
 
 .features__item {
   width: calc(50% - 15px);
-  min-height: 299px;
+  min-height: 300px;
   padding-top: 40px;
-  padding-left: 45px;
+  padding-left: 42px;
   padding-right: 42px;
   padding-bottom: 49px;
   margin-bottom: 30px;
@@ -59,7 +60,7 @@
   line-height: 34px;
   color: #00b2ff;
 
-  margin-top: 23px;
+  margin-top: 14px;
   margin-bottom: 15px;
 }
 
@@ -71,13 +72,13 @@
 
 @media (max-width: 1023px) {
   .features {
-    background-position: calc(50% + 228px) -60px;
+    background-position: calc(50% + 228px) -86px;
 
     padding-top: 54px;
   }
 
   .features__list {
-    margin-bottom: 40px;
+    margin-bottom: 27px;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -85,16 +86,20 @@
   .features__item {
     min-height: 232px;
     padding-top: 25px;
-    padding-left: 27px;
-    padding-right: 19px;
+    padding-left: 25px;
+    padding-right: 20px;
     padding-bottom: 18px;
 
     border-left: 2px solid #00b2ff;
   }
 
+  .features__item--policy .features__title {
+    margin-bottom: 15px;
+  }
+
   .features__title {
-    margin-top: 13px;
-    margin-bottom: 21px;
+    margin-top: 0px;
+    margin-bottom: 8px;
   }
 }
 
@@ -107,8 +112,9 @@
 
   .features__list {
     flex-direction: column;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 36px;
   }
 
   .features__item {
@@ -116,14 +122,50 @@
     margin-bottom: 20px;
     padding-left: 25px;
     padding-right: 13px;
-    padding-top: 23px;
+    padding-top: 24px;
     padding-bottom: 23px;
 
-    min-height: 290px;
+    min-height: 232px;
+  }
+
+  .features__item--supplier {
+    padding-right: 12px;
+    padding-bottom: 29px;
+
+    & .features__title {
+      margin-top: 5px;
+      margin-bottom: 7px;
+    }
+
+    & svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .features__item--policy svg {
+    width: 30px;
+    height: 26px;
+  }
+
+  .features__item--person {
+    padding-bottom: 22px;
+
+    & .features__title {
+      margin-bottom: 14px;
+    }
+
+    & svg {
+      height: 32px;
+      width: 32px;
+    }
   }
 
   .features__title {
-    margin-top: 14px;
-    margin-bottom: 16px;
+    margin-top: 6px;
+    margin-bottom: 9px;
+
+    font-size: 20px;
+    line-height: 28px;
   }
 }

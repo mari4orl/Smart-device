@@ -7,14 +7,24 @@
   position: relative;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-header {
+    background-image: url("../img/board-desk@2x.png"), url("../img/triangle.svg"), url("../img/background-desk@2x.png");
+    background-size: 705px, 1920px, 1920px;
+  }
+}
+
 .page-header__inner {
   margin: 0 auto;
-  padding: 231px 20px 20px 20px;
+  padding: 225px 20px 20px 20px;
   max-width: 1460px;
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  position: relative;
 }
 
 .page-header__title {
@@ -34,8 +44,8 @@
 
   position: relative;
   max-width: 683px;
-  margin-top: 31px;
-  margin-bottom: 37px;
+  margin-top: 28px;
+  margin-bottom: 42px;
   padding-left: 98px;
 
   &::before {
@@ -53,6 +63,7 @@
   text-decoration: none;
   color: #ffffff;
   min-width: 407px;
+  height: 55px;
   background-color: #00b2ff;
   border-color: #00b2ff;
   font-size: 16px;
@@ -72,25 +83,28 @@
 
 .page-header__scroll {
   position: absolute;
-  bottom: 92px;
+  bottom: -130px;
+  left: -15px;
+
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
   text-decoration: none;
   opacity: 0.5;
+
   transform: rotate(-90deg);
 }
 
 @media (max-width: 1023px) {
   .page-header {
     background-image: url("../img/board-desk@1x.png"), url("../img/triangle.svg"), url("../img/background-tab@1x.png");
-    background-position: calc(50% + 357px) 113px, top -140px center, center;
+    background-position: calc(50% + 357px) 113px, center -132px, center;
     background-size: 465px, 1514px, 100%;
     min-height: 666px;
   }
 
   .page-header__inner {
-    padding: 95px 88px;
+    padding: 96px 88px;
     min-height: 595px;
     box-sizing: border-box;
   }
@@ -108,8 +122,12 @@
     max-width: 356px;
     padding-left: 50px;
 
+    margin-top: 30px;
+    margin-bottom: 55px;
+
     &::before {
       width: 33px;
+      left: 2px;
     }
   }
 
@@ -127,9 +145,9 @@
 @media (max-width: 767px) {
   .page-header {
     background-image: url("../img/board-desk@1x.png"), url("../img/triangle.svg"), url("../img/background-mob@1x.png");
-    background-position: calc(100% + 6.8px) 91px, top -140px right -500px, center;
+    background-position: calc(100% + 7px) 91px, top -135px right -501px, center;
     background-size: calc(301px + 50% - 160px), 1446px, 100%;
-    min-height: 666px;
+    min-height: 647px;
   }
 
   .page-header__inner {
@@ -146,6 +164,8 @@
   .page-header__text {
     font-size: 16px;
     line-height: 25px;
+    margin-top: 28px;
+    margin-bottom: 41px;
 
     max-width: 230px;
   }
@@ -154,6 +174,7 @@
     min-width: 287px;
     margin-left: 0;
     align-self: center;
+    padding-top: 15px;
   }
 
   .page-header__desktop-text {

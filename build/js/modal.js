@@ -49,20 +49,20 @@ if (openBtn) {
   modalElem.addEventListener('submit', function (evt) {
     if (!userName.value || !userPhone.value || messageContent.value === '') {
       evt.preventDefault();
-    //   modalElem.classList.remove('modal-error');
-    //   modalElem.offsetWidth = modalElem.offsetWidth;
-    //   modalElem.classList.add('modal-error');
-      // if (!userName.value) {
-      //   userName.focus();
-      // } else {
-      //   if (!userPhone.value) {
-      //     userPhone.focus();
-      //   } else {
-      //     if (messageContent.value === '') {
-      //       messageContent.focus();
-      //     }
-      //   }
-      // }
+      modalElem.classList.remove('modal-error');
+      modalElem.offsetWidth = modalElem.offsetWidth;
+      modalElem.classList.add('modal-error');
+      if (!userName.value) {
+        userName.focus();
+      } else {
+        if (!userPhone.value) {
+          userPhone.focus();
+        } else {
+          if (messageContent.value === '') {
+            messageContent.focus();
+          }
+        }
+      }
     } else {
       if (isStorageSupport) {
         localStorage.setItem('userName', userName.value);
