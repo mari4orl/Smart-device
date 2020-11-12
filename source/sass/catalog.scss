@@ -49,22 +49,6 @@
 
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 63px;
-    height: 63px;
-    right: 0;
-    bottom: 0;
-
-    cursor: pointer;
-
-    background-color: #00b2ff;
-    background-image: url("../img/arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-
   &:hover {
     box-shadow: 5px 10px 20px 6px rgba(2, 2, 5, 0.82);
   }
@@ -111,6 +95,22 @@
   line-height: 30px;
   color: #ffffff;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    right: 0;
+    bottom: 0;
+
+    cursor: pointer;
+
+    background-color: #00b2ff;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
 @media (max-width: 1023px) {

@@ -1,3 +1,7 @@
+.modal {
+
+}
+
 .modal--closed {
   display: none;
 }
@@ -19,14 +23,15 @@
 
 .modal__content {
   position: fixed;
-  top: 50%;
+  top: 13.6%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 
   width: 490px;
+  box-sizing: border-box;
 
   background-color: #00b2ff;
-  padding-top: 33px;
+  padding-top: 30px;
   padding-left: 39px;
   padding-right: 39px;
   padding-bottom: 36px;
@@ -42,8 +47,8 @@
   background-color: transparent;
   border: 0;
   padding: 0;
-  right: 28px;
-  top: 18px;
+  right: 18px;
+  top: 17px;
   cursor: pointer;
   outline: none;
 
@@ -55,6 +60,7 @@
     background-color: #ffffff;
     border-radius: 5px;
     transform: rotate(45deg);
+    left: 0;
   }
 
   &::after {
@@ -65,12 +71,16 @@
     background-color: #ffffff;
     border-radius: 5px;
     transform: rotate(-45deg);
+    left: 0;
   }
 }
 
-.modal__form {
+.modal__fieldset {
   display: flex;
   flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .modal__title {
@@ -79,23 +89,25 @@
   line-height: 39px;
 
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .modal__text {
   margin: 0;
   margin-bottom: 30px;
+  padding-right: 10px;
+  line-height: 22px;
 }
 
-.modal__form input[type=text],
-.modal__form input[type=tel],
-.modal__form textarea {
+.modal__fieldset input[type=text],
+.modal__fieldset input[type=tel],
+.modal__fieldset textarea {
   background: rgba(255, 255, 255, 0.1);
   border: none;
 
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-left: 16px;
+  padding-left: 25px;
   box-sizing: border-box;
 
   color: #ffffff;
@@ -114,14 +126,14 @@
   }
 }
 
-.modal__form input[type=text],
-.modal__form input[type=tel] {
+.modal__fieldset input[type=text],
+.modal__fieldset input[type=tel] {
   width: 100%;
   height: 52px;
   margin-bottom: 30px;
 }
 
-.modal__form textarea {
+.modal__fieldset textarea {
   width: 100%;
   margin-bottom: 30px;
   height: 104px;
@@ -131,7 +143,8 @@
   background-color: transparent;
   color: #ffffff;
   outline: none;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
+  height: 46px;
 
   &:hover {
     background-color: #ffffff;
@@ -146,18 +159,24 @@
 .modal__agr-label {
   color: #ffffff;
   padding-left: 48px;
+  padding-right: 5px;
+  margin-top: 5px;
   box-sizing: border-box;
   position: relative;
-  opacity: 0.8;
   cursor: pointer;
+
+  opacity: 0.8;
+  line-height: 16px;
+  font-size: 14px;
 
   &::before {
     content: "";
     width: 16px;
     height: 16px;
+    box-sizing: border-box;
     border: 1px solid #ffffff;
     position: absolute;
-    top: 5px;
+    top: 0;
     left: 0;
   }
 
@@ -166,7 +185,7 @@
   }
 }
 
-.modal__form input[type=checkbox]:checked ~ .modal__agr-label::before {
+.modal__fieldset input[type=checkbox]:checked ~ .modal__agr-label::before {
   background-image: url("../img/Vector.svg");
   background-repeat: no-repeat;
   background-position: center;

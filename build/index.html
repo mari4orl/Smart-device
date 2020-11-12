@@ -161,19 +161,21 @@
       <section class="form">
         <h2 class="visually-hidden">Напишите нам свои вопросы</h2>
         <div class="form__container">
-          <form action="https://echo.htmlacademy.ru" class="form__form" method="post" name="form" id="form">
-            <legend class="form__title">Остались вопросы? Задайте их нам!</legend>
-            <p class="form__text">Мы проконсультируем Вас бесплатно</p>
-            <div class="form__top">
-              <input type="text" name="name" id="name" placeholder="Имя" aria-label="Введите ваше имя" required="">
-              <input type="tel" name="phone" id="phone" placeholder="Телефон" aria-label="Введите ваш номер телефона" required="">
-            </div>
-            <textarea id="message" placeholder="Ваш вопрос" aria-label="Введите ваш вопрос" rows="5" required=""></textarea>
-            <div class="form__bottom">
-              <button class="form__btn btn" type="submit">Задать вопрос</button>
-              <input type="checkbox" class="visually-hidden" name="agreement" id="agreement" value="agree">
-              <label for="agreement" class="form__agr-label">Я согласен на обработку  персональных данных</label>
-            </div>
+          <form action="https://echo.htmlacademy.ru" method="post" name="form" id="form">
+            <fieldset class="form__fieldset">
+              <legend class="form__title">Остались вопросы? Задайте их нам!</legend>
+              <p class="form__text">Мы проконсультируем Вас бесплатно</p>
+              <div class="form__top">
+                <input type="text" name="name" id="name" placeholder="Имя" aria-label="Введите ваше имя" required="">
+                <input type="tel" name="phone" id="phone" placeholder="Телефон" aria-label="Введите ваш номер телефона" required="">
+              </div>
+              <textarea id="message" placeholder="Ваш вопрос" aria-label="Введите ваш вопрос" rows="5" required=""></textarea>
+              <div class="form__bottom">
+                <button class="form__btn btn" type="submit">Задать вопрос</button>
+                <input type="checkbox" class="visually-hidden" name="agreement" id="agreement" value="agree">
+                <label for="agreement" class="form__agr-label">Я согласен на обработку  персональных данных</label>
+              </div>
+            </fieldset>
           </form>
         </div>
 
@@ -189,21 +191,21 @@
           <p class="page-footer__text-tablet">1999-2018 SD Service Devices</p>
           <ul class="page-footer__socials">
             <li class="page-footer__social">
-              <a href="#" class="page-footer__link">
+              <a href="#" class="page-footer__link" aria-label="Ссылка на нас в Фэйсбуке">
                 <svg class="page-footer__fb-img" width="27" height="27" xml:space="preserve">
                   <use xlink:href="#fb-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="page-footer__social">
-              <a href="#" class="page-footer__link">
+              <a href="#" class="page-footer__link" aria-label="Ссылка на нас в Одноклассниках">
                 <svg class="page-footer__ok-img" width="27" height="27" xml:space="preserve">
                   <use xlink:href="#ok-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="page-footer__social">
-              <a href="#" class="page-footer__link">
+              <a href="#" class="page-footer__link" aria-label="Ссылка на нас во Вконтакте">
                 <svg class="page-footer__vk-img" width="27" height="27" xml:space="preserve">
                   <use xlink:href="#vk-icon"></use>
                 </svg>
@@ -286,17 +288,19 @@
       <div class="modal__overlay"></div>
       <div class="modal__content">
         <button type="button" class="modal__close-btn">Закрыть</button>
-        <form action="https://echo.htmlacademy.ru" class="modal__form" method="post" name="form" id="modal-form">
-          <legend class="modal__title">Закажите звонок</legend>
-          <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form action="https://echo.htmlacademy.ru" method="post" name="form" id="modal-form">
+          <fieldset class="modal__fieldset">
+            <legend class="modal__title">Закажите звонок</legend>
+            <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 
-          <input type="text" name="name" id="modal-name" placeholder="Имя" value="" required="">
-          <input type="tel" name="phone" id="modal-phone" placeholder="Телефон" value="" required="">
-          <textarea id="modal-message" placeholder="Ваш вопрос" form="form-modal" rows="5" required=""></textarea>
+            <input type="text" name="name" id="modal-name" placeholder="Имя" value="" required="">
+            <input type="tel" name="phone" id="modal-phone" placeholder="Телефон" value="" required="">
+            <textarea id="modal-message" placeholder="Ваш вопрос" rows="5" required=""></textarea>
 
-          <button class="modal__btn btn" type="submit">Отправить</button>
-          <input type="checkbox" class="visually-hidden" name="agreement" id="modal-agreement" value="agree">
-          <label for="modal-agreement" class="modal__agr-label">Я согласен на обработку  персональных данных</label>
+            <button class="modal__btn btn" type="submit">Отправить</button>
+            <input type="checkbox" class="visually-hidden" name="agreement" id="modal-agreement" value="agree">
+            <label for="modal-agreement" class="modal__agr-label">Я согласен на обработку  персональных данных</label>
+          </fieldset>
         </form>
       </div>
     </section>
