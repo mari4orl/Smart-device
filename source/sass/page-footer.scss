@@ -46,7 +46,7 @@
   }
 
   & span {
-    font-family: "Roboto","Arial",sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 12px;
     line-height: 14px;
     color: #788891;
@@ -80,7 +80,6 @@
   &:focus {
     opacity: 0.5;
   }
-
 }
 
 .page-footer__text-tablet {
@@ -102,7 +101,7 @@
 }
 
 .page-footer__title {
-  font-family: "Roboto Condensed, "Arial", sans-serif";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
@@ -188,7 +187,6 @@
 
   &::before {
     content: "";
-    width: 100%;
     position: absolute;
     width: 100vw;
     height: 1px;
@@ -196,8 +194,7 @@
     opacity: 0.2;
     top: 0;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
+    transform: translateX(-50%);
   }
 }
 
@@ -268,7 +265,7 @@
     line-height: 24px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #1B2D37;
+    color: #1b2d37;
     opacity: 0.5;
 
     margin: 0;
@@ -401,8 +398,8 @@
     flex-direction: column;
   }
 
-  .page-footer input[id=section]:checked ~ .page-footer__sections-list,
-  .page-footer input[id=contacts]:checked ~ .page-footer__contacts-list {
+  .page-footer input[id="section"]:checked ~ .page-footer__sections-list,
+  .page-footer input[id="contacts"]:checked ~ .page-footer__contacts-list {
     display: block;
     padding: 0;
     margin-top: 5px;

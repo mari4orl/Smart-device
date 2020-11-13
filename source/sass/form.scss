@@ -5,12 +5,12 @@
   background-position: calc(50% - 354px) 159px, calc(50% + 90px) -60px;
 }
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .form {
-      background-image: url("../img/airplane@2x.png"), url("../img/triangles-form.svg");
-      background-size: 511px, 1750px;
-    }
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .form {
+    background-image: url("../img/airplane@2x.png"), url("../img/triangles-form.svg");
+    background-size: 511px, 1750px;
   }
+}
 
 .form__container {
   max-width: 1230px;
@@ -34,7 +34,7 @@
 }
 
 .form__title {
-  font-family: "Roboto Condensed, "Arial", sans-serif";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
@@ -59,13 +59,13 @@
   align-items: center;
 }
 
-.form__fieldset input[type=checkbox] {
+.form__fieldset input[type="checkbox"] {
   bottom: 20px;
   right: 250px;
 }
 
-.form__fieldset input[type=text],
-.form__fieldset input[type=tel],
+.form__fieldset input[type="text"],
+.form__fieldset input[type="tel"],
 .form__fieldset textarea {
   background: rgba(255, 255, 255, 0.1);
   border: none;
@@ -96,8 +96,8 @@
   }
 }
 
-.form__fieldset input[type=text],
-.form__fieldset input[type=tel] {
+.form__fieldset input[type="text"],
+.form__fieldset input[type="tel"] {
   width: 270px;
   height: 52px;
   margin-bottom: 40px;
@@ -119,7 +119,7 @@
 
   &:hover {
     background-color: #ffffff;
-    color: #00b2ff
+    color: #00b2ff;
   }
 
   &:focus {
@@ -155,7 +155,7 @@
   }
 }
 
-.form__bottom input[type=checkbox]:checked ~ .form__agr-label::before {
+.form__bottom input[type="checkbox"]:checked ~ .form__agr-label::before {
   background-image: url("../img/Vector.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -189,8 +189,8 @@
     margin-bottom: 54px;
   }
 
-  .form__fieldset input[type=text],
-  .form__fieldset input[type=tel] {
+  .form__fieldset input[type="text"],
+  .form__fieldset input[type="tel"] {
     width: 279px;
     height: 52px;
     margin-bottom: 41px;
@@ -242,8 +242,8 @@
     align-items: center;
   }
 
-  .form__fieldset input[type=text],
-  .form__fieldset input[type=tel] {
+  .form__fieldset input[type="text"],
+  .form__fieldset input[type="tel"] {
     width: 100%;
     margin-bottom: 30px;
   }

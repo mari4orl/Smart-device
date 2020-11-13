@@ -29,7 +29,7 @@
 
 .page-header__title {
   margin: 0;
-  font-family: "Roboto Condensed, "Arial", sans-serif";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
   line-height: 94px;
   letter-spacing: 0.07em;
@@ -152,7 +152,7 @@
   }
 
   .page-header__inner {
-    padding: 220px 17px 5px calc(15px + 50%*.2 - 32px);
+    padding: 220px 17px 5px calc(15px + 50% * 0.2 - 32px);
     min-height: 560px;
   }
 
