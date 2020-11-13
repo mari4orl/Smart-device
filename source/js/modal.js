@@ -3,8 +3,12 @@
 var openBtn = document.querySelector('.navigation__btn');
 var modalElem = document.querySelector('.modal');
 var overlayElem = document.querySelector('.modal__overlay');
-var submitBtn = document.querySelector('.modal__btn');
 var closeBtn = document.querySelector('.modal__close-btn');
+
+var userName;
+var userPhone;
+var messageContent;
+var isStorageSupport = true;
 
 var ESC_KEYCODE = 27
 
@@ -21,10 +25,6 @@ function closeModal() {
   }
 }
 
-var userName;
-var userPhone;
-var messageContent;
-var isStorageSupport = true;
 try {
   localStorage.getItem('userName');
   localStorage.getItem('userPhone');
@@ -73,5 +73,4 @@ if (openBtn) {
 }
 
 closeBtn.addEventListener('click', closeModal);
-submitBtn.addEventListener('click', closeModal);
 overlayElem.addEventListener('click', closeModal);

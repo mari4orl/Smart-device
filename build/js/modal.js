@@ -73,5 +73,5 @@ if (openBtn) {
 }
 
 closeBtn.addEventListener('click', closeModal);
-submitBtn.addEventListener('click', closeModal);
+// submitBtn.addEventListener('click', closeModal);
 overlayElem.addEventListener('click', closeModal);

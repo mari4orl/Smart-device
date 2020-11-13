@@ -29,6 +29,8 @@
 
   margin-left: auto;
   max-width: 570px;
+
+  position: relative;
 }
 
 .form__title {
@@ -55,6 +57,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.form__fieldset input[type=checkbox] {
+  bottom: 20px;
+  right: 250px;
 }
 
 .form__fieldset input[type=text],

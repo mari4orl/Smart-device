@@ -99,6 +99,10 @@
   line-height: 22px;
 }
 
+.modal__fieldset input[type=checkbox] {
+  bottom: 50px;
+}
+
 .modal__fieldset input[type=text],
 .modal__fieldset input[type=tel],
 .modal__fieldset textarea {
