@@ -1,7 +1,7 @@
 .navigation {
   margin: 0 auto;
 
-  padding-top: 31px;
+  padding-top: 34px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +14,35 @@
 
 .navigation__logo {
   margin-right: auto;
+  display: flex;
+  max-width: 250px;
+  color: #ffffff;
+}
+
+.navigation__logo-inner {
+  margin-right: auto;
+  padding-left: 15px;
+  padding-top: 5px;
+  display: block;
+}
+
+.navigation__title {
+  font-weight: 700;
+  font-family: "Roboto Condensed","Arial",sans-serif;
+  font-size: 25px;
+  line-height: 29px;
+  display: block;
+  margin: 0;
+}
+
+.navigation__logo span {
+  font-family: "Roboto","Arial",sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
+
+  display: block;
+  margin: 0;
 }
 
 .navigation__link {
@@ -61,7 +90,7 @@
 @media (max-width: 1023px) {
   .navigation {
     width: 100%;
-    padding-top: 18px;
+    padding-top: 16px;
     padding-bottom: 21px;
     padding-left: 25px;
     padding-right: 25px;
@@ -72,6 +101,15 @@
   .navigation__logo {
     width: 202px;
     height: 52px;
+    margin-top: 3px;
+  }
+
+  .navigation__logo-inner {
+    margin-top: 2px;
+
+    & span {
+      padding-left: 2px;
+    }
   }
 
   .navigation__link {
@@ -101,7 +139,7 @@
 
 @media (max-width: 767px) {
   .navigation {
-    padding-top: 15px;
+    padding-top: 13px;
     padding-right: 14px;
     padding-bottom: 12px;
     padding-left: 17px;
@@ -110,6 +148,10 @@
   .navigation__logo {
     width: 38px;
     height: 38px;
+  }
+
+  .navigation__logo-inner {
+    display: none;
   }
 
   .navigation__link {

@@ -16,7 +16,7 @@
 
 .page-header__inner {
   margin: 0 auto;
-  padding: 225px 20px 20px 20px;
+  padding: 230px 20px 20px 20px;
   max-width: 1460px;
   box-sizing: border-box;
 
@@ -29,7 +29,7 @@
 
 .page-header__title {
   margin: 0;
-  font-family: Roboto Condensed;
+  font-family: "Roboto Condensed, "Arial", sans-serif";
   font-size: 80px;
   line-height: 94px;
   letter-spacing: 0.07em;
@@ -135,6 +135,7 @@
     min-width: 379px;
 
     margin-left: 50px;
+    padding-top: 16px;
   }
 
   .page-header__scroll {
@@ -165,14 +166,19 @@
     font-size: 16px;
     line-height: 25px;
     margin-top: 28px;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
 
     max-width: 230px;
+
+    &::before {
+      left: 3px;
+      top: 15px;
+    }
   }
 
   .page-header__form {
     min-width: 287px;
-    margin-left: 0;
+    margin-left: 3px;
     align-self: center;
     padding-top: 15px;
   }

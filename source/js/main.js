@@ -1,5 +1,7 @@
 'use strict';
 
+var accList = document.querySelectorAll('.acc');
+
 var openBtn = document.querySelector('.navigation__btn');
 var modalElem = document.querySelector('.modal');
 var overlayElem = document.querySelector('.modal__overlay');
@@ -10,7 +12,15 @@ var userPhone;
 var messageContent;
 var isStorageSupport = true;
 
+var anchorList = document.querySelectorAll('.anchor-link');
+var anchor;
+
+var phoneInputList = document.querySelectorAll('.phone');
+var phoneInput;
+
 var ESC_KEYCODE = 27
+
+//модальное окно
 
 function onEscKeyDown(e) {
   if(e.keyCode === ESC_KEYCODE) {
@@ -74,3 +84,78 @@ if (openBtn) {
 
 closeBtn.addEventListener('click', closeModal);
 overlayElem.addEventListener('click', closeModal);
+
+
+//аккордеон
+
+for (var i = 0; i < accList.length; i++) {
+  var acc = accList[i];
+  acc.addEventListener('click', function (evt) {
+    if (evt.target.checked) {
+      for (var j = 0; j < accList.length; j++) {
+        accList[j].checked = accList[j] === evt.target ? true : false;
+      }
+    }
+  });
+}
+
+//скролл
+
+for (i = 0; i < anchorList.length; i++) {
+  anchor = anchorList[i];
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    var link = e.target.nodeName === 'SPAN' ? e.target.parentNode : e.target;
+    var blockID = link.getAttribute('href').substr(1);
+    window.scrollTo({
+      top: document.getElementById(blockID).offsetTop,
+      left: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
+//Валидация номера телефона
+
+for (var i = 0; i < phoneInputList.length; i++) {
+  phoneInput = phoneInputList[i];
+  phoneInput.addEventListener('click', addPhone);
+  phoneInput.addEventListener('keydown', checkPhone);
+}
+
+function addPhone(evt) {
+  var inp = evt.target;
+  if (!inp.value.length) {
+    inp.value = '+7(';
+  }
+}
+
+function checkPhone(evt) {
+  var inp = evt.target;
+  var curLen = inp.value.length;
+  if (!/\d/.test(evt.key)) {
+    if (evt.keyCode === 8 || evt.keyCode === 9) {
+      return;
+    } else {
+      evt.preventDefault();
+    }
+  }
+  if (curLen === 0) {
+    inp.value = inp.value + '+7(';
+  }
+  if (curLen === 2) {
+    inp.value = inp.value + '(';
+  }
+  if (curLen === 6) {
+    inp.value = inp.value + ') ';
+  }
+  if (curLen === 10) {
+    inp.value = inp.value + '-';
+  }
+  if (curLen === 13) {
+    inp.value = inp.value + '-';
+  }
+  if (curLen > 16) {
+    inp.value = inp.value.substring(0, inp.value.length - 1);
+  }
+}
