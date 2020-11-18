@@ -128,6 +128,7 @@
 }
 
 .form__agr-label {
+  order: 1;
   width: 270px;
   color: #ffffff;
   padding-left: 40px;
@@ -153,6 +154,10 @@
   &:hover {
     opacity: 1;
   }
+}
+
+.form__bottom input[type="checkbox"]:focus ~ .form__agr-label {
+  opacity: 1;
 }
 
 .form__bottom input[type="checkbox"]:checked ~ .form__agr-label::before {

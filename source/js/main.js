@@ -25,6 +25,7 @@ var ESC_KEYCODE = 27
 function onEscKeyDown(e) {
   if(e.keyCode === ESC_KEYCODE) {
     modalElem.classList.add('modal--closed');
+    document.body.classList.remove('stop-scrolling');
   }
 }
 
@@ -32,6 +33,7 @@ function closeModal() {
   if (!modalElem.classList.contains('modal--closed')) {
     modalElem.classList.add('modal--closed');
     document.removeEventListener('keydown', onEscKeyDown)
+    document.body.classList.remove('stop-scrolling');
   }
 }
 
@@ -42,6 +44,7 @@ try {
 } catch (err) {
   isStorageSupport = false;
 }
+
 if (openBtn) {
   userName = modalElem.querySelector('[id=modal-name]');
   userPhone = modalElem.querySelector('[id=modal-phone]');
@@ -49,6 +52,7 @@ if (openBtn) {
 
   openBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
+    document.body.classList.add('stop-scrolling');
     if (modalElem.classList.contains('modal--closed')) {
       modalElem.classList.remove('modal--closed');
       document.addEventListener('keydown', onEscKeyDown)

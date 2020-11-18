@@ -1,48 +1,26 @@
 .navigation {
   margin: 0 auto;
 
-  padding-top: 34px;
+  padding-top: 28px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   max-width: 1460px;
-  padding-left: 25px;
+  padding-left: 23px;
   padding-right: 25px;
 
   box-sizing: border-box;
 }
 
 .navigation__logo {
-  margin-right: auto;
-  display: flex;
-  max-width: 250px;
-  color: #ffffff;
-}
-
-.navigation__logo-inner {
-  margin-right: auto;
-  padding-left: 15px;
   padding-top: 5px;
-  display: block;
 }
 
-.navigation__title {
-  font-weight: 700;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 25px;
-  line-height: 29px;
-  display: block;
-  margin: 0;
-}
+.navigation__links-container {
+  flex-grow: 1;
 
-.navigation__logo span {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 14px;
-  color: #788891;
-
-  display: block;
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .navigation__link {
@@ -51,6 +29,7 @@
   text-decoration: none;
   color: #ffffff;
   margin-right: 50px;
+  margin-top: 23px;
   min-width: 170px;
   line-height: 18px;
 
@@ -76,6 +55,7 @@
   min-width: 180px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: 9px;
 
   &:hover {
     background-color: #ffffff;
@@ -94,33 +74,21 @@
     padding-bottom: 21px;
     padding-left: 25px;
     padding-right: 25px;
+    align-items: flex-start;
 
     box-sizing: border-box;
-  }
-
-  .navigation__logo {
-    width: 202px;
-    height: 52px;
-    margin-top: 3px;
-  }
-
-  .navigation__logo-inner {
-    margin-top: 2px;
-
-    & span {
-      padding-left: 2px;
-    }
   }
 
   .navigation__link {
     min-width: 24px;
     margin-right: 0;
     margin-left: 33px;
+    margin-top: 18px;
   }
 
   .navigation__envelope-img {
     width: 25px;
-    height: 18px;
+    height: 19px;
   }
 
   .navigation__phone-img {
@@ -150,11 +118,8 @@
     height: 38px;
   }
 
-  .navigation__logo-inner {
-    display: none;
-  }
-
   .navigation__link {
     margin-left: 25px;
+    margin-top: 11px;
   }
 }
