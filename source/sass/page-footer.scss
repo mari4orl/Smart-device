@@ -297,7 +297,11 @@
   }
 
   .closed {
-    display: block;
+    // display: block;
+  }
+
+  .nojs {
+
   }
 
   .page-footer__sections,
@@ -358,6 +362,11 @@
 
   .page-footer__sections {
     flex-direction: column;
+  }
+
+  .nojs ~ .page-footer__sections-list,
+  .nojs ~ .page-footer__contacts-list {
+    display: block;
   }
 
   .page-footer input[id="section"]:checked ~ .page-footer__sections-list,

@@ -8,6 +8,7 @@
     <meta name="description" content="Печатные платы, компоненты для светотехники, электронные комплектующие">
     <meta name="keywords" content="Печатные платы, светотехника">
     <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
     <link rel="preload" href="fonts/pt-mono-v8-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -24,7 +25,7 @@
           <source type="image/webp" srcset="img/logo-mob@1x.webp 1x, img/logo-mob@2x.webp 2x">
 
           <source media="(min-width: 768px)" srcset="img/logo-desk@1x.png 1x, img/logo-desk@2x.png 2x">
-          <img src="img/logo-mob@1x.jpg" srcset="img/logo-mob@2x.jpg 2x" alt="Логотип smart device">
+          <img src="img/logo-mob@1x.png" srcset="img/logo-mob@2x.png 2x" alt="Логотип smart device">
         </picture>
 
         <div class="navigation__links-container">
@@ -136,7 +137,7 @@
               <p class="form__text">Мы проконсультируем Вас бесплатно</p>
               <div class="form__top">
                 <input type="text" name="name" id="name" placeholder="Имя" aria-label="Введите ваше имя" required>
-                <input type="tel" class="phone" name="phone" id="phone" placeholder="Телефон" aria-label="Введите ваш номер телефона" required>
+                <input type="tel" class="phone" name="phone" id="phone" placeholder="Телефон" aria-label="Введите ваш номер телефона"  maxlength="17" minlength="17" required>
               </div>
               <textarea id="message" placeholder="Ваш вопрос" aria-label="Введите ваш вопрос" rows="5" required></textarea>
               <div class="form__bottom">
@@ -156,7 +157,7 @@
         <div class="page-footer__head-wrapper">
           <picture class="page-footer__logo">
             <source type="image/webp" srcset="img/logo-footer@1x.webp 1x, img/logo-footer@2x.webp 2x">
-            <img src="img/logo-footer@1x.jpg" srcset="img/logo-footer@2x.jpg 2x" alt="Логотип smart device">
+            <img src="img/logo-footer@1x.png" srcset="img/logo-footer@2x.png 2x" alt="Логотип smart device">
           </picture>
           <p class="page-footer__text-tablet">1999-2018 SD Service Devices</p>
           <ul class="page-footer__socials">
@@ -185,7 +186,7 @@
         </div>
 
         <div class="page-footer__sections">
-          <input class="closed visually-hidden acc" type="checkbox" name="section" id="section">
+          <input class="visually-hidden acc nojs" type="checkbox" name="section" id="section">
           <label for="section" class="page-footer__title">Разделы сайта</label>
           <ul class="page-footer__sections-list">
             <li class="page-footer__sections-item">
@@ -215,7 +216,7 @@
         </div>
 
         <div class="page-footer__contacts">
-          <input class="closed visually-hidden acc" type="checkbox" name="contacts" id="contacts">
+          <input class="visually-hidden acc nojs" type="checkbox" name="contacts" id="contacts">
           <label for="contacts" class="page-footer__title">Наш офис</label>
           <ul class="page-footer__contacts-list">
             <li class="page-footer__contacts-item">
@@ -264,12 +265,12 @@
             <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 
             <input type="text" name="name" id="modal-name" placeholder="Имя" value="" required>
-            <input type="tel" class="phone" name="phone" id="modal-phone" placeholder="Телефон" value="" required>
+            <input type="tel" class="phone" name="phone" id="modal-phone" placeholder="Телефон" value="" maxlength="17" minlength="17" required>
             <textarea id="modal-message" placeholder="Ваш вопрос" rows="5" required></textarea>
 
-            <button class="modal__btn btn" type="submit">Отправить</button>
             <input type="checkbox" class="visually-hidden" name="agreement" id="modal-agreement" value="agree" required>
             <label for="modal-agreement" class="modal__agr-label">Я согласен на обработку  персональных данных</label>
+            <button class="modal__btn btn" type="submit">Отправить</button>
           </fieldset>
         </form>
       </div>

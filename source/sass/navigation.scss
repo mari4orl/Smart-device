@@ -20,17 +20,18 @@
 
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: flex-end;
 }
 
 .navigation__link {
   display: flex;
+  align-items: center;
+
+  margin-right: 50px;
 
   text-decoration: none;
   color: #ffffff;
-  margin-right: 50px;
-  margin-top: 23px;
-  min-width: 170px;
   line-height: 18px;
 
   &:hover {
@@ -39,6 +40,14 @@
 
   &:focus {
     opacity: 0.2;
+  }
+}
+
+.navigation__link--email {
+  margin-right: 88px;
+
+  & span {
+    padding-left: 20px;
   }
 }
 
@@ -83,7 +92,7 @@
     min-width: 24px;
     margin-right: 0;
     margin-left: 33px;
-    margin-top: 18px;
+    margin-top: 17px;
   }
 
   .navigation__envelope-img {
@@ -120,6 +129,6 @@
 
   .navigation__link {
     margin-left: 25px;
-    margin-top: 11px;
+    margin-top: 9px;
   }
 }

@@ -109,6 +109,8 @@
   background: rgba(255, 255, 255, 0.1);
   border: none;
 
+	-webkit-appearance: none;
+
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 25px;
@@ -161,6 +163,7 @@
 }
 
 .modal__agr-label {
+  order: 1;
   color: #ffffff;
   padding-left: 48px;
   padding-right: 5px;
@@ -187,6 +190,11 @@
   &:hover {
     opacity: 1;
   }
+}
+
+
+.modal__fieldset input[type="checkbox"]:focus ~ .modal__agr-label {
+  opacity: 1;
 }
 
 .modal__fieldset input[type="checkbox"]:checked ~ .modal__agr-label::before {
